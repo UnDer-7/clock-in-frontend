@@ -1,3 +1,3 @@
 export default function useAuthentication(): boolean {
-    return false;
+    return true;
 }

@@ -1,5 +1,5 @@
 import { ReactNode} from "react";
-import useAuthentication from "../hooks/authenticationHook.ts";
+import useAuthentication from "../hooks/useAuthentication.ts";
 import {Navigate, useLocation} from "react-router-dom";
 import {PATH_LOGIN_PAGE} from "../pages/auth/LoginPaga.tsx";
 
