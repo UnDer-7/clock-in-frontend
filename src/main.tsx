@@ -9,9 +9,9 @@ import App from './app/App.tsx'
 import {AuthProvider, AuthProviderProps} from "react-oidc-context";
 
 const oidcConfig: AuthProviderProps = {
-    authority: "http://192.168.1.158:8081/realms/gorilla_roxo",
+    authority: "https://auth.localhost/realms/gorilla_roxo",
     client_id: "clock-in-frontend",
-    redirect_uri: "http://192.168.1.158:5173",
+    redirect_uri: "https://greenlight.front.localhost",
 };
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

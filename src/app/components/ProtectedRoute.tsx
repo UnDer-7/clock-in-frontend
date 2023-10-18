@@ -1,13 +1,13 @@
 import { ReactNode} from "react";
-import useAuthentication from "../hooks/useAuthentication.ts";
 import {Navigate, useLocation} from "react-router-dom";
 import {PATH_LOGIN_PAGE} from "../pages/auth/LoginPaga.tsx";
+import {useAuth} from "react-oidc-context";
 
 export default function ProtectedRoute({ component }: { component: ReactNode}): ReactNode {
-    const isAuthenticated = useAuthentication();
+    const auth = useAuth();
     const location = useLocation();
 
-    if (isAuthenticated) {
+    if (auth.isAuthenticated) {
         return component
     }
 

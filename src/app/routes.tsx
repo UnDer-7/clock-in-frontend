@@ -11,8 +11,7 @@ export const router = createBrowserRouter([
     },
     {
         path: PATH_HOME_PAGE,
-        // element: <ProtectedRoute component={<HomePage />} />,
-        element: <HomePage />,
+        element: <ProtectedRoute component={<HomePage />} />,
         errorElement: <ErrorPage />
     },
     {
